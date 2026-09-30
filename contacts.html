@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0e">
+  <title>Контакты — Аэрокомпозит</title>
+  <meta name="description" content="Контакты ООО «Аэрокомпозит»: адрес, реквизиты, форма обратной связи.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Аэрокомпозит — на главную">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><pattern id="tw-h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#101114"/><rect width="3" height="6" fill="#2b2d33"/><rect width="6" height="1.2" y="2.4" fill="#0b0c0e" opacity=".8"/></pattern><linearGradient id="gl-h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient><linearGradient id="wg-h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9bec8"/></linearGradient></defs><rect width="40" height="40" fill="url(#tw-h)"/><rect width="40" height="40" fill="url(#gl-h)"/><path d="M20 6.5 L33.5 29 L22 25.2 L20 31 L18 25.2 L6.5 29 Z" fill="url(#wg-h)"/><path d="M20 6.5 L6.5 29 L9.4 28 L20 10.6 Z" fill="#ff7a3d"/></svg></span>
+      <span class="logo-word"><span class="logo-aero">Аэро</span><span class="logo-comp">композит</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="index.html">Главная</a>
+      <a href="materials.html">Материалы и изделия</a>
+      <a href="technology.html">Технологии</a>
+      <a href="careers.html">Карьера</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+    </nav>
+    <button class="icon-btn menu-toggle" aria-label="Меню" aria-controls="nav" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Контакты</span>
+      <h1>Давайте поговорим о композитах</h1>
+      <p class="lead">Вопрос, идея для статьи, найденная ошибка или предложение о сотрудничестве — мы читаем все сообщения.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split split-contact" style="align-items:start">
+      <div class="reveal">
+        <ul class="contact-list">
+          <li>
+            <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <div><small>Адрес</small><strong>420085, г.&nbsp;Казань, ул.&nbsp;Гудованцева, д.&nbsp;50А</strong></div>
+          </li>
+          <li>
+            <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+            <div><small>Реквизиты</small><strong>ООО «Аэрокомпозит», ИНН 1683030017, ОГРН 1251600045707</strong></div>
+          </li>
+          <li>
+            <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><small>Отвечаем</small><strong>обычно в течение 2 рабочих дней</strong></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="figure reveal" style="padding:32px">
+        <form class="form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Имя</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <div class="error" aria-live="polite"></div>
+            </div>
+            <div class="field">
+              <label for="f-email">Почта</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+              <div class="error" aria-live="polite"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-topic">Тема</label>
+            <select id="f-topic" name="topic" required>
+              <option value="">Выберите тему</option>
+              <option value="question">Вопрос о композитах</option>
+              <option value="career">Карьера и обучение</option>
+              <option value="content">Предложить материал</option>
+              <option value="error">Сообщить об ошибке</option>
+              <option value="partner">Сотрудничество</option>
+            </select>
+            <div class="error" aria-live="polite"></div>
+          </div>
+          <div class="field">
+            <label for="f-message">Сообщение</label>
+            <textarea id="f-message" name="message" required></textarea>
+            <div class="error" aria-live="polite"></div>
+          </div>
+          <label class="consent"><input type="checkbox" name="consent" required> Согласен на обработку указанных данных для ответа на сообщение</label>
+          <div><button class="btn btn-primary" type="submit">Отправить</button></div>
+        </form>
+        <div class="form-success" id="form-success" tabindex="-1" role="status">
+          <h3>Спасибо, сообщение получено!</h3>
+          <p style="margin:0;color:var(--ink-2)">Мы ответим на указанную почту. А пока можно почитать о <a href="technology.html">технологиях производства</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="faq">
+    <div class="wrap split" style="align-items:start">
+      <div class="reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Частые вопросы</h2>
+        <p style="color:var(--ink-2)">Короткие ответы на то, о чём спрашивают чаще всего.</p>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Композитный самолёт безопасен при ударе молнии?</summary>
+          <p>Да. В наружные слои композитных обшивок встраивают тонкую металлическую сетку, которая отводит ток молнии, а топливные баки и крепёж дополнительно защищают от искрения. Такие конструкции проходят те же сертификационные испытания, что и металлические.</p>
+        </details>
+        <details>
+          <summary>Чем углепластик отличается от «карбона»?</summary>
+          <p>Ничем — «карбон» — бытовое название углепластика. Но в авиации применяют материалы с очень строгим контролем состава, укладки и отверждения, поэтому авиационная деталь и декоративная накладка из «карбона» — совсем разные изделия.</p>
+        </details>
+        <details>
+          <summary>Сколько служит композитная конструкция?</summary>
+          <p>Столько же, сколько и сам самолёт, — десятки лет. Композиты не подвержены коррозии и хорошо переносят усталостные нагрузки, а их состояние регулярно проверяют при техническом обслуживании.</p>
+        </details>
+        <details>
+          <summary>Можно ли отремонтировать повреждённую композитную деталь?</summary>
+          <p>Да. Повреждённый участок аккуратно удаляют, зачищая ступенями, и вклеивают новые слои с отверждением на месте с помощью нагревательных матов. Методики ремонта описаны в документации производителя самолёта.</p>
+        </details>
+        <details>
+          <summary>Почему не делать из композитов весь самолёт?</summary>
+          <p>В некоторых местах металл по-прежнему выгоднее: например, в сильно нагруженных узлах с концентрацией нагрузок, в шасси и горячих частях двигателя. Конструкторы выбирают материал под задачу, поэтому даже у самых «композитных» самолётов около половины массы планера — металлы.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" style="margin-top:0">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Аэрокомпозит — на главную">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><pattern id="tw-f" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#101114"/><rect width="3" height="6" fill="#2b2d33"/><rect width="6" height="1.2" y="2.4" fill="#0b0c0e" opacity=".8"/></pattern><linearGradient id="gl-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient><linearGradient id="wg-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9bec8"/></linearGradient></defs><rect width="40" height="40" fill="url(#tw-f)"/><rect width="40" height="40" fill="url(#gl-f)"/><path d="M20 6.5 L33.5 29 L22 25.2 L20 31 L18 25.2 L6.5 29 Z" fill="url(#wg-f)"/><path d="M20 6.5 L6.5 29 L9.4 28 L20 10.6 Z" fill="#ff7a3d"/></svg></span>
+      <span class="logo-word"><span class="logo-aero">Аэро</span><span class="logo-comp">композит</span></span>
+    </a>
+        <p style="margin-top:16px">Производство изделий из полимерных композиционных материалов.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul><li><a href="materials.html">Материалы и изделия</a></li><li><a href="technology.html">Технологии</a></li><li><a href="careers.html">Карьера</a></li></ul>
+      </div>
+      <div>
+        <h4>Материалы</h4>
+        <ul><li><a href="materials.html#cfrp">Углепластик</a></li><li><a href="materials.html#gfrp">Стеклопластик</a></li><li><a href="materials.html#honeycomb">Сотовые панели</a></li></ul>
+      </div>
+      <div>
+        <h4>Связь</h4>
+        <ul><li><a href="contacts.html">Контакты</a></li><li><a href="contacts.html#faq">Вопросы и ответы</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <dl class="footer-req">
+        <div class="req-item">
+          <span class="req-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6l8-3 8 3v15"/><path d="M9 21v-5h6v5M8 9h2M14 9h2M8 13h2M14 13h2"/></svg></span>
+          <div><dt>Полное наименование</dt><dd>Общество с ограниченной ответственностью «Аэрокомпозит»</dd></div>
+        </div>
+        <div class="req-item">
+          <span class="req-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <div><dt>Юридический адрес</dt><dd>420085, Республика Татарстан, г.&nbsp;Казань,<br>ул.&nbsp;Гудованцева, д.&nbsp;50А, кв.&nbsp;27</dd></div>
+        </div>
+        <div class="req-item">
+          <span class="req-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+          <div><dt>Основной вид деятельности</dt><dd><span class="req-code">ОКВЭД 22.29</span> Производство прочих пластмассовых изделий</dd></div>
+        </div>
+      </dl>
+      <a class="footer-fund" href="https://fasie.ru/" target="_blank" rel="noopener">
+        <span>При поддержке</span>
+        <img src="img/fasie.svg" alt="Фонд содействия инновациям" width="260" height="134">
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> ООО «Аэрокомпозит»</span>
+      <span>ИНН 1683030017 · ОГРН 1251600045707</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/carbon.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
