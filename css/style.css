@@ -453,7 +453,7 @@ td:first-child { font-weight: 700; }
 .footer-grid a:hover { color: var(--accent); }
 .footer-grid p { color: var(--ink-2); max-width: 26em; }
 .footer-bottom { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--ink-3); font-size: .85rem; }
-.footer-legal { margin-top: 48px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: stretch; }
+.footer-legal { margin-top: 48px; }
 .footer-req { margin: 0; padding: 8px 28px; background: rgba(14, 15, 19, .82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--line); border-radius: var(--radius); }
 .req-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px 0; }
 .req-item + .req-item { border-top: 1px solid var(--line); }
@@ -462,11 +462,7 @@ td:first-child { font-weight: 700; }
 .footer-req dt { font: 600 .7rem/1 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--ink-3); margin: 3px 0 8px; }
 .footer-req dd { margin: 0; color: var(--ink); font-size: 1rem; line-height: 1.5; }
 .req-code { display: inline-block; margin-right: 8px; padding: 2px 8px; border-radius: 6px; background: rgba(255, 255, 255, .08); font: 600 .8rem/1.5 var(--mono); color: var(--accent); }
-.footer-fund { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 28px 24px; background: #fff; border-radius: var(--radius); text-decoration: none; box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; }
-.footer-fund:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 0, 0, .45); }
-.footer-fund img { display: block; width: 100%; max-width: 280px; height: auto; }
-.footer-fund span { font: 600 .72rem/1 var(--mono); text-transform: uppercase; letter-spacing: .14em; color: #8a8b90; text-align: center; }
-@media (max-width: 880px) { .footer-legal { grid-template-columns: 1fr; } .footer-fund { max-width: 420px; } }
+@media (min-width: 881px) { .footer-req { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; } .req-item + .req-item { border-top: 0; } }
 @media (max-width: 480px) { .footer-req { padding: 4px 18px; } .req-item { gap: 12px; } }
 @media (max-width: 880px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid > :first-child { grid-column: 1 / -1; } }
 @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
