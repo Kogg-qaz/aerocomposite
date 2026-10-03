@@ -476,6 +476,29 @@ td:first-child { font-weight: 700; }
 .partner-card img { display: block; width: auto; height: auto; max-width: 100%; max-height: 170px; }
 @media (max-width: 880px) { .partners-head { grid-template-columns: 1fr; gap: 16px; margin-bottom: 32px; } .partners-grid { grid-template-columns: 1fr; gap: 16px; } .partner-card { min-height: 180px; } .partner-card img { max-height: 130px; } }
 
+/* ---------- Contacts block ---------- */
+.contacts-block { max-width: 760px; margin: 0 auto; text-align: center; }
+.contacts-block h2 { margin-bottom: 20px; }
+.contacts-lead { margin: 0 0 40px; font-size: clamp(1.05rem, 1.8vw, 1.3rem); line-height: 1.5; color: var(--ink-2); }
+.contacts-info { display: grid; gap: 6px; font-style: normal; color: var(--ink-2); }
+.contacts-info strong { color: var(--ink); }
+.contacts-info b { color: var(--ink); font-weight: 700; }
+.contacts-info a { color: var(--accent); text-decoration: none; }
+.contacts-info a:hover { text-decoration: underline; }
+
+.footer-contacts { position: relative; isolation: isolate; padding: 48px 28px; text-align: center; }
+/* подложка и бортики расходятся в стороны и тают; текст лежит поверх и не затрагивается */
+.footer-contacts::before, .footer-contacts::after { content: ""; position: absolute; z-index: -1; inset: 0 clamp(-160px, -10vw, -16px); pointer-events: none; }
+.footer-contacts::before { background: rgba(14, 15, 19, .82); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent); mask-image: linear-gradient(90deg, transparent, #000 25%, #000 75%, transparent); }
+.footer-contacts::after {
+  --edge: linear-gradient(90deg, transparent, rgba(255, 255, 255, .3) 30%, rgba(255, 122, 61, .55) 50%, rgba(255, 255, 255, .3) 70%, transparent);
+  background: var(--edge) top / 100% 1px no-repeat, var(--edge) bottom / 100% 1px no-repeat; }
+.footer-contacts h2 { margin-bottom: 16px; }
+.footer-contacts .contacts-lead { max-width: 720px; margin: 0 auto 32px; }
+.footer-contacts .contacts-info { font-size: 1rem; }
+@media (max-width: 480px) { .footer-contacts { padding: 32px 18px; } }
+
 /* ---------- Reveal ---------- */
 
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
