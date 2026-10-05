@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0c0e">
-  <title>Аэрокомпозит — композиты в авиации</title>
-  <meta name="description" content="ООО «Аэрокомпозит» — производство изделий из полимерных композиционных материалов, Казань. Материалы, технологии производства и карьера в отрасли.">
+  <title>Аэрокомпозит — композитные элементы для БПЛА</title>
+  <meta name="description" content="ООО «Аэрокомпозит», Казань — разработка технологии изготовления корпусов и седел для крепления двигателя БПЛА из мелкофракционного углеволокна методом вакуумной инфузии.">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +25,16 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html" aria-label="Аэрокомпозит — на главную">
+    <a class="logo" href="#top" aria-label="Аэрокомпозит — на главную">
       <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><pattern id="tw-h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#101114"/><rect width="3" height="6" fill="#2b2d33"/><rect width="6" height="1.2" y="2.4" fill="#0b0c0e" opacity=".8"/></pattern><linearGradient id="gl-h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient><linearGradient id="wg-h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9bec8"/></linearGradient></defs><rect width="40" height="40" fill="url(#tw-h)"/><rect width="40" height="40" fill="url(#gl-h)"/><path d="M20 6.5 L33.5 29 L22 25.2 L20 31 L18 25.2 L6.5 29 Z" fill="url(#wg-h)"/><path d="M20 6.5 L6.5 29 L9.4 28 L20 10.6 Z" fill="#ff7a3d"/></svg></span>
       <span class="logo-word"><span class="logo-aero">Аэро</span><span class="logo-comp">композит</span></span>
     </a>
     <nav class="nav" id="nav" aria-label="Основное меню">
-      <a href="index.html" aria-current="page">Главная</a>
-      <a href="materials.html">Материалы и изделия</a>
-      <a href="technology.html">Технологии</a>
-      <a href="careers.html">Карьера</a>
-      <a href="contacts.html">Контакты</a>
+      <a href="#top">Главная</a>
+      <a href="#material">Материал</a>
+      <a href="#development">Развитие композитов</a>
+      <a href="#project">О проекте</a>
+      <a href="#contacts">Контакты</a>
     </nav>
     <button class="icon-btn menu-toggle" aria-label="Меню" aria-controls="nav" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -45,41 +45,28 @@
 <main id="main">
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
         <span class="eyebrow">Композиты в авиации</span>
-        <h1>Легче алюминия. <em>Прочнее стали.</em></h1>
-        <p class="lead">Аэрокомпозит — казанская компания, которая производит изделия из полимерных композиционных материалов — тех, что изменили авиастроение: от радиопрозрачных обтекателей 1940-х до крыльев современных лайнеров.</p>
+        <h1>Композитные элементы <em>для БПЛА</em></h1>
+        <p class="lead">Создание нового класса конструкционных элементов корпуса и седел для крепления двигателей беспилотных летательных аппаратов — БПЛА, изготавливаемых по технологии вакуумной инфузии мелкофракционного углеволокна.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="materials.html">
-            Изучить материалы
+          <a class="btn btn-primary" href="#contacts">
+            Связаться
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
-          <a class="btn btn-ghost" href="technology.html">Как их производят</a>
         </div>
       </div>
 
-      <figure class="hero-art reveal" aria-label="Схема самолёта с композитными агрегатами">
-        <div class="viewer viewer--hero" data-model="airliner" role="img" aria-label="3D-модель самолёта: агрегаты подсвечиваются при наведении, в подписи указан материал">
+      <figure class="hero-art reveal" aria-label="Модель самолёта">
+        <div class="viewer viewer--hero" data-model="airliner" role="img" aria-label="3D-модель самолёта: её можно вращать и разбирать">
           <canvas></canvas>
           <div class="viewer-loading">Загрузка 3D…</div>
-          <div class="part-info" data-part-info aria-live="polite"></div>
           <div class="viewer-ui">
-            <span class="viewer-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>Вращайте · наведите на деталь</span>
+            <span class="viewer-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg>Вращайте модель</span>
             <button class="viewer-btn" type="button" data-explode aria-pressed="false">Разобрать</button>
           </div>
-        </div>
-        <div class="part-chips" aria-label="Агрегаты самолёта">
-          <button type="button" data-part="fuselage" aria-pressed="false"><i class="sw sw-carbon"></i>Фюзеляж</button>
-          <button type="button" data-part="wingbox" aria-pressed="false"><i class="sw sw-carbon"></i>Кессон крыла</button>
-          <button type="button" data-part="tail" aria-pressed="false"><i class="sw sw-carbon"></i>Оперение</button>
-          <button type="button" data-part="flaps" aria-pressed="false"><i class="sw sw-honey"></i>Закрылки</button>
-          <button type="button" data-part="nacelles" aria-pressed="false"><i class="sw sw-carbon"></i>Мотогондолы</button>
-          <button type="button" data-part="radome" aria-pressed="false"><i class="sw sw-glass"></i>Обтекатель РЛС</button>
-          <button type="button" data-part="fairing" aria-pressed="false"><i class="sw sw-glass"></i>Обтекатель центроплана</button>
-          <button type="button" data-part="slats" aria-pressed="false"><i class="sw sw-metal"></i>Предкрылки</button>
-          <button type="button" data-part="pylons" aria-pressed="false"><i class="sw sw-ti"></i>Пилоны</button>
         </div>
         <svg class="hero-fallback" viewBox="0 0 520 460" role="img">
           <defs>
@@ -105,23 +92,6 @@
             <line x1="236" y1="260" x2="284" y2="260"/><line x1="236" y1="300" x2="284" y2="300"/>
             <line x1="236" y1="340" x2="284" y2="340"/>
           </g>
-          <!-- выноски -->
-          <g stroke-width="1.2" class="svg-accent-stroke" fill="none">
-            <path d="M268 50 L340 50 L360 30"/>
-            <path d="M400 268 L430 220 L470 220"/>
-            <path d="M190 418 L130 440 L70 440"/>
-            <path d="M260 210 L150 150 L60 150"/>
-          </g>
-          <g class="svg-text">
-            <text x="364" y="26">Обтекатель РЛС</text>
-            <text x="364" y="42" opacity=".7">стеклопластик</text>
-            <text x="398" y="196" text-anchor="start">Кессон крыла</text>
-            <text x="398" y="212" opacity=".7">углепластик</text>
-            <text x="4" y="432">Оперение</text>
-            <text x="4" y="454" opacity=".7">углепластик</text>
-            <text x="4" y="130">Фюзеляж, панели пола</text>
-            <text x="4" y="146" opacity=".7">угле- и сотопласт</text>
-          </g>
         </svg>
       </figure>
     </div>
@@ -129,20 +99,20 @@
     <div class="wrap" style="margin-top:56px">
       <div class="stats reveal">
         <div class="stat">
+          <div class="stat-value">1–2<small>мм</small></div>
+          <div class="stat-label">преимущественная длина фрагментов мелкофракционного углеволокна</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value"><span data-count="100">0</span><small>Н</small></div>
+          <div class="stat-label">статическая нагрузка, которую выдержал опытный образец</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">30–90<small>Гц</small></div>
+          <div class="stat-label">колебательное воздействие при испытаниях: частоты 30, 60 и 90 Гц</div>
+        </div>
+        <div class="stat">
           <div class="stat-value"><span data-count="53">0</span><small>%</small></div>
-          <div class="stat-label">композитов по массе в конструкции Airbus A350 XWB</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value"><span data-count="1.6">0</span><small>г/см³</small></div>
-          <div class="stat-label">плотность углепластика — это в 1,7 раза меньше, чем у алюминия</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value">~<span data-count="20">0</span><small>%</small></div>
-          <div class="stat-label">типичное снижение массы агрегата при замене металла композитом</div>
-        </div>
-        <div class="stat">
-          <div class="stat-value"><span data-count="180">0</span><small>°C</small></div>
-          <div class="stat-label">стандартная температура отверждения авиационных эпоксидных препрегов</div>
+          <div class="stat-label">композитов по массе в конструкции лайнера Airbus A350 XWB</div>
         </div>
       </div>
     </div>
@@ -166,44 +136,49 @@
     </div>
   </section>
 
-  <!-- ЧТО ТАКОЕ КОМПОЗИТ -->
-  <section class="section section-alt" id="about">
+  <!-- МАТЕРИАЛ AEROCOMPOSITE -->
+  <section class="section section-alt" id="material">
     <div class="wrap split">
       <div class="reveal">
         <span class="eyebrow">Основы</span>
-        <h2>Что такое композит</h2>
-        <p>Композиционный материал — это сочетание двух и более компонентов с разными свойствами, которые работают вместе. В авиации чаще всего это <strong>полимерные композиты</strong>: прочные волокна, уложенные в заданных направлениях, и связующее, которое держит их вместе.</p>
+        <h2>Материал AeroComposite</h2>
+        <p>Композиционный материал образуется из нескольких компонентов, которые после объединения работают как единая конструкционная система. В технологии AeroComposite <strong>углеродный полимерный композит</strong> формируется из мелкофракционного углеволокна и эпоксидного связующего методом вакуумной инфузии.</p>
         <ul class="checklist">
-          <li><span><strong>Армирующий наполнитель</strong> — углеродные, стеклянные или арамидные волокна. Несут основную нагрузку.</span></li>
-          <li><span><strong>Матрица (связующее)</strong> — чаще всего эпоксидная смола. Передаёт нагрузку между волокнами и защищает их.</span></li>
-          <li><span><strong>Схема армирования</strong> — направление слоёв (0°, ±45°, 90°) задаёт, куда материал будет прочным. Свойства проектируются под конкретную деталь.</span></li>
+          <li><span><strong>Мелкофракционное углеволокно</strong> — основной армирующий компонент композита. Используются фрагменты преимущественной длиной 1–2 мм, распределяемые по поверхности формообразующей оснастки.</span></li>
+          <li><span><strong>Эпоксидная матрица</strong> — связующее под действием вакуума пропитывает сформированную заготовку и после отверждения объединяет фрагменты углеволокна в цельный композитный материал.</span></li>
+          <li><span><strong>Локальное усиление</strong> — в переходных и монтажных участках дополнительно применяется рубленое углеволокно, а в свободных периферийных зонах увеличивается количество мелкофракционного углеволокна.</span></li>
         </ul>
       </div>
 
-      <figure class="figure reveal" aria-label="Схема укладки слоёв композита">
+      <figure class="figure reveal" aria-label="Схема материала: мелкофракционное углеволокно в эпоксидной матрице и участок локального усиления">
         <svg viewBox="0 0 440 300" role="img">
-          <title>Пакет слоёв с разной ориентацией волокон</title>
-          <defs>
-            <pattern id="p0" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" class="svg-bg-alt"/><line x1="0" y1="4" x2="8" y2="4" class="svg-stroke" stroke-width="1.4" opacity=".55"/></pattern>
-            <pattern id="p45" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" class="svg-accent" opacity=".85"/><line x1="0" y1="4" x2="8" y2="4" stroke="#000" stroke-width="1.4" opacity=".25"/></pattern>
-            <pattern id="pm45" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="8" height="8" class="svg-accent" opacity=".6"/><line x1="0" y1="4" x2="8" y2="4" stroke="#000" stroke-width="1.4" opacity=".25"/></pattern>
-            <pattern id="p90" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" class="svg-steel"/><line x1="4" y1="0" x2="4" y2="8" stroke="#fff" stroke-width="1.4" opacity=".35"/></pattern>
-          </defs>
-          <g transform="translate(40 0)">
-            <path d="M0 230 L220 230 L300 180 L80 180 Z" fill="url(#p0)" class="svg-stroke" stroke-width="1"/>
-            <path d="M0 195 L220 195 L300 145 L80 145 Z" fill="url(#p45)" class="svg-stroke" stroke-width="1"/>
-            <path d="M0 160 L220 160 L300 110 L80 110 Z" fill="url(#p90)" class="svg-stroke" stroke-width="1"/>
-            <path d="M0 125 L220 125 L300 75 L80 75 Z" fill="url(#pm45)" class="svg-stroke" stroke-width="1"/>
-            <path d="M0 90 L220 90 L300 40 L80 40 Z" fill="url(#p0)" class="svg-stroke" stroke-width="1"/>
+          <title>Мелкофракционное углеволокно в эпоксидной матрице и участок локального усиления рубленым углеволокном</title>
+          <!-- плита: верхняя, передняя и боковая грани -->
+          <path d="M40 170 L300 170 L390 100 L130 100 Z" class="svg-bg-alt svg-stroke" stroke-width="1"/>
+          <path d="M40 170 L300 170 L300 192 L40 192 Z" class="svg-surface svg-stroke" stroke-width="1"/>
+          <path d="M300 170 L390 100 L390 122 L300 192 Z" class="svg-steel svg-stroke" stroke-width="1"/>
+          <!-- участок локального усиления -->
+          <path d="M216.8 170 L300 170 L390 100 L306.8 100 Z" class="svg-accent" opacity=".14"/>
+          <path d="M216.8 170 L306.8 100" class="svg-accent-stroke" stroke-width="1" stroke-dasharray="4 4" fill="none"/>
+          <!-- мелкофракционное углеволокно -->
+          <path d="M140.1 156.0L148.5 157.0M213.2 141.6L213.1 145.0M93.7 138.6L99.7 139.6M220.0 113.7L224.9 116.0M280.3 105.3L282.9 109.6M292.6 160.9L298.4 165.0M100.8 157.5L94.8 159.6M141.8 127.8L145.1 132.1M189.6 160.9L194.5 163.0M254.3 137.5L252.4 141.4M190.4 145.3L185.0 149.4M162.1 129.6L154.6 131.3M249.7 147.1L258.9 149.1M215.2 117.3L215.5 121.0M116.7 122.2L114.7 127.1M293.3 144.2L290.7 148.8M235.7 137.3L226.4 138.1M223.5 123.5L219.8 126.3M287.1 102.6L292.9 106.6M200.1 122.9L200.8 126.3M105.9 157.4L101.2 159.7M107.9 149.7L100.9 151.4M112.3 137.3L104.6 138.9M320.9 110.7L322.8 114.5M206.5 110.1L215.3 112.6M114.5 149.6L114.8 153.4M217.2 148.0L218.7 151.2M191.1 128.7L185.5 133.1M223.8 127.4L232.4 128.2M338.6 116.2L331.0 119.3M182.0 139.6L179.4 142.8M70.8 160.7L76.7 162.6M137.8 161.8L143.1 163.3M109.6 142.8L104.0 144.0M213.4 154.9L216.7 158.4M156.6 158.2L147.2 158.3M202.4 135.4L208.4 136.5M153.8 148.2L162.0 150.7M130.5 106.2L137.8 108.2M192.1 164.0L184.0 164.3M317.9 121.1L320.8 124.7M158.3 116.8L152.0 119.7M156.1 151.9L146.8 152.2M328.6 114.3L322.3 118.0M145.9 133.7L153.3 134.1M84.2 147.0L80.2 150.2M327.3 138.2L317.5 138.4M312.9 142.1L318.1 144.6M121.5 152.5L113.4 153.9M300.1 134.9L293.1 137.7M130.0 123.4L122.5 126.8M277.0 135.2L271.7 137.5M196.3 113.9L199.5 119.0M222.5 106.2L230.1 108.7M100.2 155.0L92.3 158.0M156.7 112.5L152.0 117.3M179.0 131.9L185.6 132.1M345.9 125.3L338.0 126.2M224.6 110.5L231.9 113.7M138.9 145.9L137.0 149.6M152.9 139.5L146.6 140.5M179.9 136.9L172.0 138.3M229.1 107.1L228.3 111.5M179.4 163.5L185.9 165.8M117.2 114.7L117.7 118.4M274.7 129.5L274.3 133.5M251.7 115.8L250.5 119.2M136.0 146.2L135.8 151.2M249.8 116.4L251.5 121.6M245.2 132.8L240.7 136.5M209.9 132.6L202.1 133.3M290.2 109.8L296.9 113.8M260.4 106.6L268.9 108.8M115.7 137.4L120.2 139.8M128.4 123.8L119.8 125.4M143.8 120.7L151.6 122.7M349.0 105.9L342.2 106.5M193.4 134.4L184.8 137.2M124.9 137.3L128.8 141.2M121.8 146.0L130.7 146.3M222.0 137.2L225.0 140.1M249.4 134.2L243.1 134.3M320.7 104.6L325.0 107.3M121.3 117.0L127.8 118.6M225.4 107.8L231.8 111.5M164.9 107.3L160.1 111.0M78.6 159.9L80.6 164.6M148.7 106.6L141.7 109.4M144.3 112.3L138.6 113.8M195.0 144.4L187.0 145.4M125.9 156.3L131.9 159.4M90.2 154.8L95.2 156.9M150.8 145.0L156.4 149.0M185.8 154.7L193.2 155.0M116.3 162.4L114.9 167.3M132.5 135.7L141.7 137.4M291.0 138.1L284.1 140.3M193.8 134.5L185.0 134.7M204.7 112.3L201.0 116.7M176.8 143.7L182.5 145.1M126.1 119.2L132.2 121.1M142.9 111.7L138.1 116.2M140.8 148.9L141.7 152.8M130.5 138.1L123.5 138.6M337.7 131.9L330.8 132.3M156.0 142.3L158.2 145.4M209.1 133.0L209.0 136.7M74.3 147.9L76.3 151.2M62.5 163.1L67.9 165.7M240.4 131.0L236.1 135.4M295.8 109.9L299.8 113.4M307.6 154.4L303.8 158.8M131.9 111.9L128.2 116.8M297.1 114.0L296.6 117.6M246.5 113.1L238.7 115.7M269.1 108.8L264.2 112.8M110.5 162.3L113.2 165.5M146.6 112.2L143.4 116.4M256.2 123.8L264.1 123.9M307.9 117.5L307.0 121.9M216.4 160.0L222.7 163.5M88.9 148.0L96.0 150.9M309.9 103.6L312.7 107.7M226.0 121.4L222.8 126.0M214.1 159.7L218.7 162.3M254.8 147.0L263.1 147.1M91.8 147.3L86.8 151.2M240.9 145.7L241.8 150.1M172.7 157.0L180.4 160.0M366.0 106.5L366.8 109.8M327.7 104.6L332.8 107.8M180.2 105.7L178.5 109.4M124.9 132.4L133.8 134.6M296.8 132.4L291.1 136.6M176.9 110.3L184.8 110.7M90.7 133.8L95.3 137.3M118.0 143.7L111.6 145.6M108.7 118.6L117.4 120.5M333.1 119.8L339.0 124.0M176.7 139.0L173.9 144.2M171.7 139.1L178.8 139.7M147.7 114.0L140.7 114.8M131.9 148.2L138.5 150.7M224.1 105.4L216.2 108.4M280.5 106.9L279.0 112.2M232.3 160.3L233.7 165.2M284.7 125.8L291.7 126.4M287.9 156.0L291.6 159.9M181.1 118.3L187.9 122.3M236.0 145.1L238.7 149.4M110.2 155.3L103.6 156.4M196.9 152.2L187.3 152.3M171.0 156.7L177.5 157.7M141.6 158.8L146.4 161.6M261.5 108.8L263.9 113.5M194.0 131.7L197.7 135.3M85.8 147.7L94.9 149.8M222.4 125.4L229.8 128.6M138.5 148.4L139.8 152.6M348.8 113.3L358.3 113.7M116.9 119.5L117.7 124.7M200.4 165.3L193.0 166.3M319.2 111.2L326.2 115.0M94.3 154.4L89.9 158.2M343.6 119.8L337.3 122.9M211.0 130.8L206.3 132.9M180.4 107.2L185.4 111.1M106.9 148.4L101.9 152.2M87.2 159.3L85.1 163.6M161.6 152.0L170.0 152.1M165.5 135.0L161.2 139.9M304.4 135.2L309.3 137.9M340.2 122.3L347.4 122.5M225.8 122.7L231.1 125.8M286.1 108.6L293.0 109.0M165.6 138.5L172.7 141.3M303.3 118.9L309.7 121.6M311.4 144.9L318.4 148.3M171.1 118.7L164.0 119.3M188.3 152.4L190.1 156.1M289.9 105.6L292.0 109.1M179.2 105.5L185.6 106.1M103.5 140.6L94.6 142.5M308.8 102.1L313.8 106.7M168.2 107.9L177.1 108.4M243.7 140.7L247.5 144.3M93.2 163.9L96.4 167.4M292.6 156.5L300.4 159.8M204.5 112.7L206.4 117.7M106.4 136.1L99.1 137.2M124.5 143.1L134.0 143.6M213.4 115.5L222.4 116.1M63.3 160.0L70.0 163.9M304.6 108.9L309.4 112.0M338.3 126.3L333.9 129.3M154.5 147.7L150.2 150.0M322.5 126.5L332.3 127.0M152.9 136.1L143.1 136.9M167.5 148.2L167.6 152.5M297.7 152.7L291.4 156.4M313.3 116.2L317.7 120.2M155.5 142.9L164.4 144.1M157.6 119.0L164.5 119.8M108.9 131.6L101.6 131.9M343.9 104.4L350.8 105.5M115.5 132.7L117.0 137.5M145.7 138.1L141.2 142.1M299.1 112.7L307.1 114.5M280.4 145.6L283.6 149.8M246.9 152.2L251.9 154.9M158.5 109.4L162.9 113.3M225.6 103.2L231.6 106.1M297.8 124.7L307.3 126.4M238.6 114.7L229.6 116.0M83.6 146.7L89.0 148.7M335.3 127.4L339.1 132.3M303.1 136.9L297.8 139.4M294.3 157.1L291.2 161.4M133.0 142.0L138.2 144.2M159.5 127.5L166.4 130.3M78.3 144.3L85.5 147.0M146.3 150.8L144.9 155.8M77.3 157.5L76.1 161.6M218.6 158.7L214.7 161.7M179.4 148.1L172.2 148.6M173.4 128.9L175.4 132.9M340.3 103.2L346.4 105.6M250.1 152.8L244.4 153.8M225.3 114.5L218.2 116.0M179.2 154.1L178.2 157.4" class="svg-stroke" stroke-width="1.3" stroke-linecap="round" opacity=".6" fill="none"/>
+          <path d="M107.6 186.7h2.1M177.8 180.3h2.7M60.5 185.1h2.0M182.6 187.2h2.4M95.5 182.9h3.5M205.1 185.6h2.5M122.7 178.9h2.1M266.6 185.2h4.1M47.6 186.0h4.2M161.4 184.6h3.4M102.0 176.4h2.7M55.6 179.4h4.2M218.4 186.0h4.1M112.0 182.2h3.3M241.5 181.8h2.8M205.2 187.5h2.7M264.3 175.2h2.8M104.6 184.7h4.8M231.0 179.2h4.6M127.5 178.1h4.7M202.4 184.0h4.0M288.8 181.1h4.5M219.0 186.1h3.3M225.7 182.4h2.9M98.6 183.1h2.2M271.9 176.9h2.1M72.5 187.1h3.0M81.2 175.4h2.1M217.8 183.2h4.1M228.7 175.9h3.8M136.1 185.6h4.5M267.0 175.9h4.6M272.8 187.3h2.3M97.0 176.5h2.1M256.2 185.6h3.9M250.6 183.2h2.9M70.8 176.3h4.3M96.8 179.1h3.3M51.2 178.3h2.8M223.5 179.8h3.0" class="svg-stroke" stroke-width="1.3" stroke-linecap="round" opacity=".45" fill="none"/>
+          <!-- рубленое углеволокно -->
+          <path d="M340.2 108.4L333.1 118.0M285.3 130.6L297.5 138.9M329.7 107.1L330.3 117.6M342.0 108.0L360.5 112.3M349.6 108.7L372.1 110.7M324.5 134.1L314.5 147.9M287.5 148.5L307.3 157.6M305.9 112.6L328.0 120.5M270.2 134.4L278.5 146.3M269.7 146.3L245.7 150.7M261.2 130.8L286.6 132.5M297.2 148.8L293.5 161.9M297.4 139.4L291.7 151.2M303.4 120.5L307.7 132.6M268.2 124.4L285.1 132.9M326.2 116.8L345.3 123.4M268.8 150.7L273.0 161.1M257.5 137.3L280.4 138.9M289.5 152.7L270.1 161.7M265.4 152.8L274.1 164.6M317.2 154.3L290.6 154.4M346.1 117.9L326.2 118.6M318.4 107.0L342.0 114.4M343.5 107.5L351.9 116.7M284.1 147.5L301.6 158.8M306.8 152.4L284.5 155.5M258.1 142.3L270.5 153.0M257.3 150.8L238.0 153.0M345.9 110.6L330.5 117.4M271.4 127.3L281.8 139.4M338.6 129.7L316.4 134.4M303.6 102.5L311.5 115.1M306.1 140.1L299.4 155.0M299.0 117.7L318.0 124.2M275.3 153.9L293.6 164.2M347.5 103.5L335.8 115.0M245.1 159.2L261.4 163.8M313.4 136.6L291.5 140.7M244.7 149.0L269.2 150.0M253.1 138.0L261.4 147.4M277.7 126.6L296.9 134.5M315.3 135.3L296.4 137.4M262.8 148.9L254.9 158.4M335.5 115.5L350.4 124.5M272.3 121.5L283.0 133.1M314.3 132.4L296.0 143.6" class="svg-accent-stroke" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <!-- выноски -->
+          <g class="svg-accent-stroke" stroke-width="1.2" fill="none">
+            <path d="M84 64 L140 128"/>
+            <path d="M352 64 L330 118"/>
+            <path d="M64 222 L64 184"/>
           </g>
           <g class="svg-text">
-            <text x="352" y="66">0°</text>
-            <text x="352" y="101">−45°</text>
-            <text x="352" y="136">90°</text>
-            <text x="352" y="171">+45°</text>
-            <text x="352" y="206">0°</text>
-            <text x="40" y="270">Каждый слой — волокна в матрице.</text>
-            <text x="40" y="288">Порядок укладки задаёт свойства детали.</text>
+            <text x="20" y="38">Мелкофракционное</text>
+            <text x="20" y="54" opacity=".7">углеволокно, 1–2 мм</text>
+            <text x="284" y="38">Локальное усиление</text>
+            <text x="284" y="54" opacity=".7">рубленое углеволокно</text>
+            <text x="40" y="238">Эпоксидная матрица</text>
+            <text x="40" y="270" opacity=".7">Матрица объединяет фрагменты волокна</text>
+            <text x="40" y="288" opacity=".7">в цельный композитный материал.</text>
           </g>
         </svg>
       </figure>
@@ -239,13 +214,13 @@
         </article>
         <article class="card reveal">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h4l3-8 4 16 3-8h2"/></svg></div>
-          <h3>Проектируемые свойства</h3>
-          <p>Жёсткость и прочность можно «направить» туда, где они нужны, меняя ориентацию и число слоёв, — металл так не умеет.</p>
+          <h3>Локальное усиление</h3>
+          <p>Количество и распределение армирующего материала можно изменять в отдельных участках детали, повышая жёсткость переходных, периферийных и монтажных зон.</p>
         </article>
         <article class="card reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12a7 7 0 0 1 14 0M8.5 12a3.5 3.5 0 0 1 7 0"/><circle cx="12" cy="12" r="1"/><path d="M12 13v8"/></svg></div>
-          <h3>Радиопрозрачность</h3>
-          <p>Стекло- и органопластики пропускают радиоволны, поэтому из них делают обтекатели радаров и антенн.</p>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16c2.5-7 5-10 9-10s6.5 3 9 10"/><path d="M7 16c1.5-4 3-6 5-6s3.5 2 5 6"/><path d="M3 20h18"/></svg></div>
+          <h3>Формование сложной геометрии</h3>
+          <p>Мелкофракционное углеволокно позволяет распределять армирующий материал по криволинейной поверхности оснастки и формировать малогабаритные детали сложной формы.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
@@ -257,13 +232,12 @@
   </section>
 
   <!-- ДОЛЯ В САМОЛЁТАХ -->
-  <section class="section section-alt">
+  <section class="section section-alt" id="development">
     <div class="wrap split">
       <div class="reveal">
         <span class="eyebrow">В цифрах</span>
         <h2>Доля композитов растёт с каждым поколением</h2>
         <p style="color:var(--ink-2)">Если в 1980-х композиты применяли для отдельных панелей и рулей, то в самолётах 2010-х из них сделаны крыло и фюзеляж. Российский МС-21 получил композитный кессон крыла, изготовленный методом вакуумной инфузии.</p>
-        <a class="btn btn-ghost" href="materials.html#applications" style="margin-top:12px">Где применяют</a>
       </div>
       <div class="figure reveal">
         <div class="bars">
@@ -312,32 +286,32 @@
     </div>
   </section>
 
-  <!-- РАЗДЕЛЫ -->
-  <section class="section section-alt">
+  <!-- ПРОЕКТ AEROCOMPOSITE -->
+  <section class="section section-alt" id="project">
     <div class="wrap">
       <div class="section-head reveal">
         <div>
-          <span class="eyebrow">Разделы сайта</span>
-          <h2>Куда двигаться дальше</h2>
+          <span class="eyebrow">Проект AeroComposite</span>
+          <h2>Корпуса и седла для крепления двигателя БПЛА</h2>
         </div>
-        <p>Рассказываем о материалах, технологиях и профессиях композитного производства.</p>
+        <p>В рамках проекта разработана технология изготовления корпусных элементов и седел для крепления двигателя БПЛА из мелкофракционного углеволокна методом вакуумной инфузии. Изготовлен опытный образец, проведены испытания и скорректирована технологическая документация.</p>
       </div>
       <div class="grid grid-3">
-        <a class="card reveal" href="materials.html">
-          <span class="card-num">01 / Материалы</span>
-          <h3>Материалы и изделия</h3>
-          <p>Углепластик, стеклопластик, органопластик и сотовые заполнители. Сравнение с металлами и примеры агрегатов.</p>
-        </a>
-        <a class="card reveal" href="technology.html">
-          <span class="card-num">02 / Производство</span>
-          <h3>Технологии</h3>
-          <p>Автоклавное формование, вакуумная инфузия, RTM, автоматическая выкладка, неразрушающий контроль.</p>
-        </a>
-        <a class="card reveal" href="careers.html">
-          <span class="card-num">03 / Люди</span>
-          <h3>Карьера в отрасли</h3>
-          <p>Какие специалисты нужны композитному производству, что они делают и где этому учиться.</p>
-        </a>
+        <article class="card reveal">
+          <span class="card-num">01</span>
+          <h3>Разрабатываемый продукт</h3>
+          <p>Лёгкие композитные корпусные элементы и седла, предназначенные для размещения и фиксации двигателя БПЛА. Конструкция предусматривает локальное усиление переходных, периферийных и монтажных зон.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-num">02</span>
+          <h3>Технология изготовления</h3>
+          <p>Сухая заготовка формируется преимущественно из мелкофракционного углеволокна, герметизируется вакуумной плёнкой и пропитывается эпоксидным связующим под действием вакуума.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-num">03</span>
+          <h3>Испытания и развитие</h3>
+          <p>Опытный образец выдержал статическую нагрузку до 100 Н и колебательное воздействие на частотах 30, 60 и 90 Гц.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -346,10 +320,20 @@
     <div class="wrap">
       <div class="cta reveal">
         <div>
-          <h2>Есть вопрос или предложение о сотрудничестве?</h2>
-          <p>Напишите нам — ответим на вопросы о композитах и обсудим совместную работу.</p>
+          <h2>Есть предложение о сотрудничестве?</h2>
+          <p>Свяжитесь с командой AeroComposite для обсуждения разработки композитных деталей, изготовления опытных образцов и возможных направлений применения технологии.</p>
         </div>
-        <a class="btn btn-primary" href="contacts.html">Написать нам</a>
+        <a class="btn btn-primary" href="mailto:granta201352@gmail.com">Обсудить сотрудничество</a>
+      </div>
+      <div class="footer-contacts" id="contacts" style="margin-top:56px">
+        <h2>Контакты</h2>
+        <address class="contacts-info">
+          <strong>ООО «АЭРОКОМПОЗИТ»</strong>
+          <span>ИНН: 1683030017 · ОГРН: 1251600045707</span>
+          <span>Адрес: 420085, г.&nbsp;Казань, ул.&nbsp;Гудованцева, д.&nbsp;50А, кв.&nbsp;27</span>
+          <span>Телефон: <a href="tel:+79047611632">+7&nbsp;904&nbsp;761-16-32</a></span>
+          <span>Электронная почта: <a href="mailto:granta201352@gmail.com">granta201352@gmail.com</a></span>
+        </address>
       </div>
     </div>
   </section>
@@ -360,46 +344,33 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="logo" href="index.html" aria-label="Аэрокомпозит — на главную">
+        <a class="logo" href="#top" aria-label="Аэрокомпозит — на главную">
       <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><pattern id="tw-f" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#101114"/><rect width="3" height="6" fill="#2b2d33"/><rect width="6" height="1.2" y="2.4" fill="#0b0c0e" opacity=".8"/></pattern><linearGradient id="gl-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient><linearGradient id="wg-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9bec8"/></linearGradient></defs><rect width="40" height="40" fill="url(#tw-f)"/><rect width="40" height="40" fill="url(#gl-f)"/><path d="M20 6.5 L33.5 29 L22 25.2 L20 31 L18 25.2 L6.5 29 Z" fill="url(#wg-f)"/><path d="M20 6.5 L6.5 29 L9.4 28 L20 10.6 Z" fill="#ff7a3d"/></svg></span>
       <span class="logo-word"><span class="logo-aero">Аэро</span><span class="logo-comp">композит</span></span>
     </a>
-        <p style="margin-top:16px">Производство изделий из полимерных композиционных материалов.</p>
+        <p style="margin-top:16px">AeroComposite — разработка технологии изготовления корпусов и седел для крепления двигателя БПЛА из мелкофракционного углеволокна методом вакуумной инфузии.</p>
       </div>
       <div>
         <h4>Разделы</h4>
-        <ul><li><a href="materials.html">Материалы и изделия</a></li><li><a href="technology.html">Технологии</a></li><li><a href="careers.html">Карьера</a></li></ul>
+        <ul><li><a href="#top">Главная</a></li><li><a href="#material">Материал</a></li><li><a href="#development">Развитие композитов</a></li></ul>
       </div>
       <div>
-        <h4>Материалы</h4>
-        <ul><li><a href="materials.html#cfrp">Углепластик</a></li><li><a href="materials.html#gfrp">Стеклопластик</a></li><li><a href="materials.html#honeycomb">Сотовые панели</a></li></ul>
+        <h4>Проект</h4>
+        <ul><li><a href="#project">О проекте</a></li><li><a href="#partners">Партнёры</a></li></ul>
       </div>
       <div>
         <h4>Связь</h4>
-        <ul><li><a href="contacts.html">Контакты</a></li><li><a href="contacts.html#faq">Вопросы и ответы</a></li></ul>
-      </div>
-    </div>
-    <div class="footer-legal">
-      <div class="footer-contacts" id="contacts">
-        <h2>Контакты</h2>
-        <p class="contacts-lead">Открыты к сотрудничеству с партнёрами, заказчиками, производителями, инвесторами и организациями, заинтересованными в развитии композитных технологий.</p>
-        <address class="contacts-info">
-          <strong>ООО «АЭРОКОМПОЗИТ»</strong>
-          <span>Юр. адрес: 420085, г.&nbsp;Казань, ул.&nbsp;Гудованцева, д.&nbsp;50А, кв.&nbsp;27</span>
-          <span><b>E-mail:</b> <a href="mailto:ip.galievlz@gmail.com">ip.galievlz@gmail.com</a></span>
-          <span>Телефон: <a href="tel:+79047611632">+7&nbsp;904&nbsp;761-16-32</a></span>
-        </address>
+        <ul><li><a href="#contacts">Контакты</a></li><li><a href="tel:+79047611632">+7&nbsp;904&nbsp;761-16-32</a></li></ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year></span> ООО «Аэрокомпозит»</span>
-      <span>ИНН 1683030017 · ОГРН 1251600045707</span>
+      <span>© ООО «АЭРОКОМПОЗИТ». ИНН 1683030017. ОГРН 1251600045707.</span>
     </div>
   </div>
 </footer>
 
 <script src="js/carbon.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=8"></script>
 <script src="js/parts3d.js"></script>
 </body>
 </html>
