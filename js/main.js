@@ -19,6 +19,22 @@
     }));
   }
 
+  /* ---------- Подсветка пункта меню для блока на экране ---------- */
+  const anchors = nav ? $$('a[href^="#"]', nav) : [];
+  if (anchors.length) {
+    const blocks = anchors.map(a => document.getElementById(a.getAttribute("href").slice(1)));
+    const mark = () => {
+      const line = window.scrollY + window.innerHeight * 0.35;
+      let idx = 0;
+      blocks.forEach((b, i) => { if (b && b.getBoundingClientRect().top + window.scrollY <= line) idx = i; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) idx = anchors.length - 1;
+      anchors.forEach((a, i) => { if (i === idx) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    };
+    addEventListener("scroll", mark, { passive: true });
+    addEventListener("resize", mark);
+    mark();
+  }
+
   /* ---------- Год в футере ---------- */
   $$("[data-year]").forEach(el => { el.textContent = new Date().getFullYear(); });
 
